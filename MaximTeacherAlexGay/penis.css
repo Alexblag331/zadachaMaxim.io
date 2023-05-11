@@ -1,0 +1,59 @@
+@charset "UTF-8";
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    font-family: sans-serif;
+    color:#f0ede8;
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+section:nth-child(odd){
+    background-image: url("https://sun9-17.userapi.com/impg/hQbljKvuoDsQgFEhewe1tcYfpBquB9g978CoLw/mMdwZQOEgts.jpg?size=960x1280&quality=95&sign=f8930a6310cf5d703dbde122a07f2b6a&type=album");
+    height:850px;
+    }
+section:nth-child(even){
+    background-image: url("https://sun9-35.userapi.com/impf/c846419/v846419115/b16b9/h564QSyH23o.jpg?size=800x600&quality=96&sign=8c22b085226955ece82496af0bafbd2e&type=album");
+    height: 850px;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: #122263;
+}
+nav a{
+    position: relative;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav a:hover,
+section#n1:hover~nav a[href="#n1"],
+section#n2:hover~nav a[href="#n2"],
+section#n3:hover~nav a[href="#n3"],
+section#n4:hover~nav a[href="#n4"],
+section#n5:hover~nav a[href="#n5"]
+{
+    background: #122263;
+    color: #8e1a48;
+}
+nav a:active{
+    background: #008fc9
+}
